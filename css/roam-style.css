@@ -43,6 +43,8 @@ body {
 
 .roam-banner {
     width: 100%;
+    padding-top: 50px;
+    background-color: #2EA7E0;
 }
 
 .roam-banner img {
@@ -91,14 +93,10 @@ body {
     left: 0;
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #F3FAFF,
-        0 0 10px #F3FAFF,
-        0 0 10px #F3FAFF;
+    text-shadow: 0 0 10px #F3FAFF, 0 0 10px #F3FAFF, 0 0 10px #F3FAFF;
     -webkit-text-stroke: 10px #F3FAFF;
     font-weight: 900;
 }
-
 
 .roam-container-title h1 span {
     color: #5D4F3F;
@@ -117,10 +115,7 @@ body {
     transform: translateY(-50%);
     z-index: -1;
     color: transparent;
-    text-shadow:
-        0 0 10px #F3FAFF,
-        0 0 10px #F3FAFF,
-        0 0 10px #F3FAFF;
+    text-shadow: 0 0 10px #F3FAFF, 0 0 10px #F3FAFF, 0 0 10px #F3FAFF;
     -webkit-text-stroke: 10px #F3FAFF;
     font-weight: 900;
     font-size: inherit;
@@ -200,7 +195,6 @@ body {
     color: #2EA7E0;
     font-weight: 900;
     letter-spacing: .2em;
-
 }
 
 .roam-page2 {
@@ -331,7 +325,6 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
 
 .roam-popup1-content {
     width: 80%;
@@ -618,7 +611,6 @@ body {
     font-weight: 400;
     clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
     padding: 5px 10px 5px 20px;
-
 }
 
 .roam-page3-travel-button {
@@ -706,7 +698,6 @@ body {
 .roam-footer-hosts img {
     width: 100%;
     max-width: 388px;
-
 }
 
 .roam-footer-row {
@@ -1024,6 +1015,36 @@ a:hover .roam-bg-color4 {
     background-color: #D2D2D2;
 }
 
+.roam-lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.roam-lang-btn {
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.roam-lang-btn:hover {
+    background-color: #fff;
+    color: #2EA7E0;
+
+}
+
+.roam-lang-btn.active {
+    background-color: #fff;
+    color: #2EA7E0;
+
+}
+
 @media (max-width: 1366px) {
     .roam-container-title {
         bottom: 10vh;
@@ -1150,7 +1171,6 @@ a:hover .roam-bg-color4 {
         font-size: 4rem;
     }
 
-
     .roam-container1 {
         height: 310px;
     }
@@ -1236,11 +1256,9 @@ a:hover .roam-bg-color4 {
         font-size: 1.5rem;
         line-height: 3rem;
     }
-
 }
 
 @media (max-width: 768px) {
-
     .roam-container1 {
         display: flex;
         flex-direction: column;
@@ -1405,10 +1423,7 @@ a:hover .roam-bg-color4 {
     }
 }
 
-
 @media (max-width: 650px) {
-
-
     .roam-container-title h1 {
         font-size: 3rem;
     }
@@ -1424,7 +1439,6 @@ a:hover .roam-bg-color4 {
     .roam-container1 {
         height: 500px;
     }
-
 }
 
 @media (max-width: 530px) {
@@ -1460,6 +1474,7 @@ a:hover .roam-bg-color4 {
 
     .roam-popup1-text h1 {
         font-size: 1.5rem;
+        margin-top: 20px;
     }
 
     .roam-popup1-text h2 {
@@ -1481,7 +1496,6 @@ a:hover .roam-bg-color4 {
     .roam-content p {
         font-size: 1rem;
     }
-
 
     .roam-container1 {
         height: 380px;
@@ -1561,15 +1575,14 @@ a:hover .roam-bg-color4 {
     }
 }
 
-
 @media (max-width: 470px) {
-
     .card-12 {
         display: none;
     }
 
     .roam-library-content-title h2 {
         font-size: 1.2rem;
+        padding: 0 10px;
     }
 
     .roam-popup1-image img {
@@ -1581,11 +1594,7 @@ a:hover .roam-bg-color4 {
     }
 }
 
-
-
-
 @media (max-width: 330px) {
-
     .roam-page3-travel-card {
         width: 240px;
         height: 320px;

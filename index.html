@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="探索新北文化之美，體驗多元新北故事，發現城市中的驚喜旅程。">
-    <meta name="keywords" content="新北旅遊, 新北文化, 景點推薦, 新北無限新北, 指向新北">
-    <meta name="author" content="新北市政府">
-    <title>Point Out! 指向新北無限新北</title>
+    <meta id="meta-description" name="description" content="探索新北文化之美，體驗多元新北故事，發現城市中的驚喜旅程。">
+    <meta id="meta-keywords" name="keywords" content="新北旅遊, 新北文化, 景點推薦, 新北無限新北, 指向新北">
+    <meta id="meta-author" name="author" content="新北市政府">
+    <title id="page-title">Point Out! 指向新北無限新北</title>
     <link rel="stylesheet" href="css/roam-style.min.css">
 </head>
+
 
 <body>
     <div class="roam">
@@ -19,13 +20,19 @@
                     <source srcset="img/roam-banner-mobile.svg" media="(max-width: 768px)">
                     <img src="img/roam-banner.svg" alt="Point Out! 指向新北無限新北">
                 </picture>
+                <div class="roam-lang-switch">
+                    <button id="roam-lang-zh" class="roam-lang-btn active">中文</button>
+                    <button id="roam-lang-en" class="roam-lang-btn">English</button>
+                </div>
             </div>
         </header>
         <section class="roam-event">
             <div class="roam-section">
                 <div class="roam-content">
-                    <h1>走進文化之美 <span class="roam-highlight">新北的故事</span></h1>
-                    <p>新北文化底蘊豐厚，請跟著鏡頭走進這片土地。</p>
+                    <h1 class="lang zh">走進文化之美 <span class="roam-highlight lang zh">新北的故事</span></h1>
+                    <h1 class="lang en" style="display: none;">Explore the Beauty of Culture <span class="roam-highlight lang en" style="display: none;">The Story of New Taipei</span></h1>
+                    <p class="lang zh">新北文化底蘊豐厚，請跟著鏡頭走進這片土地。</p>
+                    <p class="lang en" style="display: none;">New Taipei is rich in culture; follow the lens into this land.</p>
                     <div class="roam-video-container">
                         <iframe class="roam-video" src="https://www.youtube.com/embed/r0QPDKheZ10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
@@ -35,8 +42,10 @@
             <div class="roam-container1">
                 <div class="roam-container1-icon"><img src="img/roam-icon2.svg" alt=""></div>
                 <div class="roam-container-title">
-                    <h1 data-text=" Point (     ) Out!"> Point (     ) Out!<br><span data-text="指向無限新北!">指向無限新北!</span></h1>
-                    <p>2/13(四)-2/28(五)</p>
+                    <h1 data-text=" Point (     ) Out!"> Point (     ) Out!<br><span class="lang zh" data-text="指向無限新北!">指向無限新北!</span>
+                        <span class="lang en" style="display: none;" data-text="New Taipei!">New Taipei!</span></h1>
+                    <p class="lang zh">2/13(四)-2/28(五)</p>
+                    <p class="lang en" style="display: none;">Feb 13 (Thu) - Feb 28 (Fri)</p>
                 </div>
                 <div class="roam-container1-banner">
                     <div class="roam-container1-banner-icon"><img src="img/roam-icon5.svg" alt=""></div>
@@ -59,113 +68,176 @@
                 </div>
             </div>
             <div class="roam-info-section">
-                <p class="roam-description">
+                <p class="roam-description lang zh">
                     講到新北，你會想到什麼呢？在新北，你能抿一壺坪林百年茶香，縱觀四百年淡水歷史風華，也能在廟街的香火氤氳中，側看傳統藝術師們的工藝絕活。<br>
                     啟程之前，不妨用指尖在地圖上描繪夢想旅途；《新北漫遊指南》邀請你走入11條山海城交織路線，指向各式各樣的新北市。<br><br>
                 </p>
-                <p class="roam-highlight">
+                <p class="roam-description lang en" style="display: none;">
+                    What comes to mind when you think of New Taipei? In New Taipei, you can savor a century-old tea aroma in Pinglin, explore 400 years of Tamsui's historical charm, or admire the craftsmanship of traditional artisans amidst the incense-filled temple streets.<br>
+                    Before setting off, why not trace your dream journey on the map with your fingertips? The《 New Taipei Travel Guide》invites you to explore 11 routes interwoven with mountains, seas, and urban landscapes, pointing to the diverse beauty of New Taipei City.<br><br>
+                </p>
+                <p class="roam-highlight lang zh">
                     <span class="roam-highlight-title">世壯選手看過來：</span>
                     只要您具有2025雙北世壯運參加者身份（含一般選手、帕拉選手、隊職員、陪同者、帕拉選手助理員），將<b>全額免費</b>，一位參加者只限報名一次，讓新北市用文化相挺選手。
+                </p>
+                <p class="roam-highlight lang en" style="display: none;">
+                    <span class="roam-highlight-title">Hey, Universiade Athletes!</span>
+                    If you're a 2025 Taipei-New Taipei Universiade participant (including athletes, para-athletes, team staff, companions, or para-athlete assistants), enjoy <b>free entry!</b> Each participant can register once as New Taipei supports athletes with its rich culture.
                 </p>
             </div>
             <div class="roam-page3-travel">
                 <div class="roam-page3-travel-card card-1" data-popup="roam-popup-1">
                     <div class="roam-page3-travel-bg"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date">藍天海岸</div>
                         <h3 class="roam-page3-travel-title">穿越時空<br>滬尾歷史行腳</h3>
                         <div class="roam-page3-travel-button">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date">Blue Coast</div>
+                        <h3 class="roam-page3-travel-title">Tamsui Walk</h3>
+                        <div class="roam-page3-travel-button">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-2" data-popup="roam-popup-2">
                     <div class="roam-page3-travel-bg"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date">藍天海岸</div>
                         <h3 class="roam-page3-travel-title">臺灣最東端的漁港故事</h3>
                         <div class="roam-page3-travel-button">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date">Blue Coast</div>
+                        <h3 class="roam-page3-travel-title">Easternmost Fishing Village</h3>
+                        <div class="roam-page3-travel-button">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-3" data-popup="roam-popup-3">
                     <div class="roam-page3-travel-bg"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date">藍天海岸</div>
                         <h3 class="roam-page3-travel-title">北海岸地景漫遊</h3>
                         <div class="roam-page3-travel-button">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date">Blue Coast</div>
+                        <h3 class="roam-page3-travel-title">North Coast Exploration</h3>
+                        <div class="roam-page3-travel-button">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-4" data-popup="roam-popup-4">
                     <div class="roam-page3-travel-bg"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date">藍天海岸</div>
                         <h3 class="roam-page3-travel-title">藝術薈萃三芝生態</h3>
                         <div class="roam-page3-travel-button">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date">Blue Coast</div>
+                        <h3 class="roam-page3-travel-title">Artistic Sanzhi Eco-Trip</h3>
+                        <div class="roam-page3-travel-button">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-5" data-popup="roam-popup-5">
                     <div class="roam-page3-travel-bg roam-bg-color2"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label1">黃金山城</div>
                         <h3 class="roam-page3-travel-title">重訪瑞芳礦山黃金歲月</h3>
                         <div class="roam-page3-travel-button roam-button1">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label1">Golden Town</div>
+                        <h3 class="roam-page3-travel-title">Golden Era of Ruifang</h3>
+                        <div class="roam-page3-travel-button roam-button1">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-6" data-popup="roam-popup-6">
                     <div class="roam-page3-travel-bg roam-bg-color2"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label1">黃金山城</div>
                         <h3 class="roam-page3-travel-title">從深山走進小鎮<br>平溪、雙溪秘境之旅</h3>
                         <div class="roam-page3-travel-button roam-button1">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label1">Golden Town</div>
+                        <h3 class="roam-page3-travel-title">Hidden Gems<br>Pingxi & Shuangxi</h3>
+                        <div class="roam-page3-travel-button roam-button1">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-7" data-popup="roam-popup-7">
                     <div class="roam-page3-travel-bg roam-bg-color3"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label2">綠色山林</div>
                         <h3 class="roam-page3-travel-title">山裡的療癒轉運站<br>坪林茶文化之旅</h3>
                         <div class="roam-page3-travel-button roam-button2">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label2">Green Forest</div>
+                        <h3 class="roam-page3-travel-title">Mountain Retreat<br>Pinglin Tea Tour</h3>
+                        <div class="roam-page3-travel-button roam-button2">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-8" data-popup="roam-popup-8">
                     <div class="roam-page3-travel-bg roam-bg-color3"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label2">綠色山林</div>
                         <h3 class="roam-page3-travel-title">新店人文探索<br>烏來原民風情</h3>
                         <div class="roam-page3-travel-button roam-button2">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label2">Green Forest</div>
+                        <h3 class="roam-page3-travel-title">Xindian Culture Journey<br>Wulai Indigenous Vibes</h3>
+                        <div class="roam-page3-travel-button roam-button2">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-9" data-popup="roam-popup-9">
                     <div class="roam-page3-travel-bg roam-bg-color4"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label3">紅色陶寶</div>
                         <h3 class="roam-page3-travel-title">漫遊三鶯藝術帶<br>森林園區走透透</h3>
                         <div class="roam-page3-travel-button roam-button3">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label3">Red Ceramics</div>
+                        <h3 class="roam-page3-travel-title">San-Ying Art Trail<br>Forest Park Stroll</h3>
+                        <div class="roam-page3-travel-button roam-button3">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-10" data-popup="roam-popup-10">
                     <div class="roam-page3-travel-bg  roam-bg-color5"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label4">都會美學</div>
                         <h3 class="roam-page3-travel-title">府中1公里<br>多元文化碰出新滋味</h3>
                         <div class="roam-page3-travel-button roam-button4">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label4">City Style</div>
+                        <h3 class="roam-page3-travel-title">Fuzhong 1KM<br>Multicultural Fusion</h3>
+                        <div class="roam-page3-travel-button roam-button4">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-11" data-popup="roam-popup-11">
                     <div class="roam-page3-travel-bg roam-bg-color5"></div>
                     <div class="roam-page3-travel-bg1"></div>
-                    <div class="roam-page3-travel-content">
+                    <div class="roam-page3-travel-content lang zh">
                         <div class="roam-page3-travel-date roam-label4">都會美學</div>
                         <h3 class="roam-page3-travel-title">常民生活美學探訪</h3>
                         <div class="roam-page3-travel-button roam-button4">查看遊程</div>
+                    </div>
+                    <div class="roam-page3-travel-content lang en" style="display: none;">
+                        <div class="roam-page3-travel-date roam-label4">City Style</div>
+                        <h3 class="roam-page3-travel-title">Everyday Aesthetic Tour</h3>
+                        <div class="roam-page3-travel-button roam-button4">View Tour</div>
                     </div>
                 </div>
                 <div class="roam-page3-travel-card card-12">
@@ -178,7 +250,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">穿越時空 滬尾歷史行腳</h2>
@@ -199,6 +271,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Time-Traveling Tamsui Historic Walk</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Relive history at Fort San Domingo, where the Dutch once resided. Stroll through the Japanese-era Tamsui historical sites, each step rich with time’s imprint. Discover archaeology at Taiwan's only archaeology-focused museum, the Shihsanhang Museum, and immerse yourself in Tamsui and Bali's timeless charm.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Tamsui Historical Museum (Fort San Domingo) → Tada Eikichi Residence → Kinoshita Shizuka Residence → Tamsui Old Street → Ferry to Bali → Left Bank Park → Shihsanhang Museum (Archaeology Workshop) → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img1-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img1-2.webp" alt="新北漫遊圖片">
@@ -214,7 +307,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">臺灣最東端的漁港故事</h2>
@@ -235,6 +328,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">The Eastern Fishing Village</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>New Taipei boasts the longest coastline in northern Taiwan. Visit Magang, the easternmost fishing village in Taiwan, and explore its serene alleys filled with stories of stone houses, divers, and the ocean. In the afternoon, visit Gongbei Temple, blending Japanese and Chinese architectural styles, and make a taro cake with local ingredients for sweet memories.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Fulong Station → Old Caoling Bicycle Trail → Magang Village (Stone House Culture, Diver Introduction) → Fulong Station Stroll → Taro Cake DIY → Gongbei Temple → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img2-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img2-2.webp" alt="新北漫遊圖片">
@@ -250,7 +364,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">北海岸地景漫遊</h2>
@@ -269,6 +383,27 @@
                         </div>
                         <div class="roam-popup-buttons">
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
+                        </div>
+                    </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">North Coast Exploration</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Immerse yourself in nature's geological classroom along the North Coast, embarking on a low-carbon adventure. Learn about modern environmental and energy practices at the Taipower Northern Exhibition Center. Relax with a foot-soak experience at Jinshan Old Street and recharge before heading to the Shitou Mountain Trail for breathtaking views.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Yehliu Geopark → Taipower Northern Exhibition Center → Jinshan Old Street → Zhongshan Hot Spring Park (Foot Soak) → Shitou Mountain Trail → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
                         </div>
                     </div>
                     <div class="roam-popup1-image">
@@ -293,7 +428,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">藝術薈萃三芝生態</h2>
@@ -314,6 +449,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Artistic Ecology in Sanzhi</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Sanzhi's natural beauty has long inspired artists, creating a haven where creativity flourishes. Visit Zilong Mountain Villa, a harmonious retreat reminiscent of Taiwan's Fallingwater. Explore the Coral Shell Temple, a hidden gem resembling an underwater palace, and discover Sanzhi's unique artistic charm.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Sansheng Trail → Zilong Mountain Villa (Kamakura Dojo) → Fuji Fishing Port → Coral Shell Temple → Zhilan Park Sea Viewing Platform → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img4-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img4-2.webp" alt="新北漫遊圖片">
@@ -330,7 +486,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">重訪瑞芳礦山黃金歲月</h2>
@@ -351,6 +507,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Rediscover Jiufen's Golden Era</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Step back into the gold rush days of Jinguashi. Explore historical sites, landmarks, and scenic landscapes. At the Gold Museum, try your hand at panning for gold and relive the golden age of this mountain town. Stroll along the gentle Nanzilin Trail, tucked behind the fishing port, and take in the breathtaking coastal views of Northeast Taiwan.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Nanzilin Trail → Nanya Rock Formations → Jiufen Old Street → Gold Museum (Gold Panning Experience) → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img5-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img5-2.webp" alt="新北漫遊圖片">
@@ -365,7 +542,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">從深山走進小鎮 平溪、雙溪秘境之旅</h2>
@@ -386,6 +563,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Hidden Gems of Pingxi & Shuangxi</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Discover the breathtaking Shifen Waterfall, often called the "Taiwanese Niagara Falls," and admire its majestic cascade. At Shifen Old Street, release sky lanterns for a wish or capture the charm of trains passing through. Create chewy taro balls at a DIY workshop and visit the historic temples of Shuangxi, uncovering the unique charm of this secluded region.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Shifen Waterfall → Shifen Old Street → Pinglin Leisure Farm (Taro Ball DIY) → Shuangxi San Chong Temple → Shuangxi Ferry Pier → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img6-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img6-2.webp" alt="新北漫遊圖片">
@@ -401,7 +599,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">山裡的療癒轉運站 坪林茶文化之旅</h2>
@@ -422,6 +620,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Mountain Retreat: Pinglin Tea Tour</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Begin your journey at the Pinglin Tea Museum, connecting to Shiding Old Street and the Tea Road section of the Tamsui-Kavalan Historic Trail. Explore the beauty of tea culture amidst misty mountains, retrace the historic tea transportation routes, and savor the century-old aroma of Pinglin tea for a serene escape.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station → Shenkeng Agricultural Product Center (Tofu DIY) → Wutu Creek Trail → Shiding Old Street → Pinglin Tea Museum → Pinglin Stone Carving Park → Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img7-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img7-2.webp" alt="新北漫遊圖片">
@@ -437,7 +656,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">新店人文探索X烏來原民風情</h2>
@@ -458,6 +677,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Cultural Tales: Xindian & Wulai</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Discover Xindian's journey from a rural village to a modern city, with highlights like the refreshing power plant popsicles. Explore Wulai's indigenous culture on its historic trolley, and listen to the stories whispered by the mountains.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station - Shisizhang Historic Culture Park - Guishan Power Plant (Xindian River Hydropower Museum) - Wulai Old Street - Wulai Scenic Trolley - Wulai Waterfall - Wulai Forestry Life Museum - Jingmei White Terror Memorial Park - Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img8-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img8-2.webp" alt="新北漫遊圖片">
@@ -472,7 +712,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">漫遊三鶯藝術帶 森林園區走透透</h2>
@@ -493,6 +733,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Art & Nature: San Ying Adventure</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Explore the lush forests and stunning landscapes of Manyueyuan Park in Sanxia. Release stress in nature's embrace, and discover the artistic beauty of Yingge's ceramics. Create your own mosaic tiles for a perfect blend of art and nature.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station - Manyueyuan Park - Yingge Old Street - Mosaic DIY Workshop - Yingge Ceramics Museum - Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img9-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img9-2.webp" alt="新北漫遊圖片">
@@ -510,7 +771,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">府中1公里X多元文化碰出新滋味</h2>
@@ -531,6 +792,27 @@
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
                         </div>
                     </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Fuzhong Cultural Flavors</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Within a 1-kilometer radius of Fuzhong, explore the rich history of Banqiao, where ancient and modern coexist. Stroll through Huaxin Street for a unique Southeast Asian culinary experience and cross-cultural food tasting.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station - Bao Fu Temple - Myanmar Street - Southeast Asian Cooking Experience - Lin Family Mansion - Daguan Academy - Ci Hui Temple - Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
+                        </div>
+                    </div>
                     <div class="roam-popup1-image">
                         <img src="img/roam-popup-img10-1.webp" alt="新北漫遊圖片" class="active">
                         <img src="img/roam-popup-img10-2.webp" alt="新北漫遊圖片">
@@ -546,7 +828,7 @@
                     <span class="roam-popup1-close"></span>
                     <button class="roam-popup-nav-btn roam-popup-prev">&lt;</button>
                     <button class="roam-popup-nav-btn roam-popup-next">&gt;</button>
-                    <div class="roam-popup1-text scrollable-content">
+                    <div class="roam-popup1-text scrollable-content lang zh">
                         <div class="roam-popup-content">
                             <h1>新北漫遊指南</h1>
                             <h2 class="highlight">常民生活美學探訪</h2>
@@ -565,6 +847,27 @@
                         </div>
                         <div class="roam-popup-buttons">
                             <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">報名遊程</a>
+                        </div>
+                    </div>
+                    <div class="roam-popup1-text scrollable-content lang en" style="display: none;">
+                        <div class="roam-popup-content">
+                            <h1>New Taipei Travel Guide</h1>
+                            <h2 class="highlight">Everyday Aesthetics Tour</h2>
+                            <h3>Travel Info</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Discover the beauty of daily life in Taiwan’s local neighborhoods. Visit the 300-year-old Xinzhuang Temple Street, the historic Luzhou Li Residence, and Shou Rang Tang in Wugu for a glimpse into the area's rich heritage. Explore Air Force Village in Sanchong to experience Taiwan's unique military housing culture.</p>
+                                </div>
+                            </div>
+                            <h3>Travel Itinerary</h3>
+                            <div class="activity-info">
+                                <div class="activity-block">
+                                    <p>Banqiao Station - Luzhou Li Residence - Air Force Village, Sanchong - Xinzhuang Temple Street - Shou Rang Tang, Wugu - Pineapple Cake DIY - Banqiao Station</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roam-popup-buttons">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn fb-btn">Join Now</a>
                         </div>
                     </div>
                     <div class="roam-popup1-image">
@@ -587,15 +890,21 @@
                 <div class="roam-label-bg1"><img src="img/roam-bg1.svg" alt=""></div>
             </div>
             <div class="roam-library">
-                <div class="roam-content">
+                <div class="roam-content lang zh">
                     <h1><span class="roam-highlight">走讀書香</span> 探索圖書館的故事</h1>
                 </div>
-                <div class="roam-description">
+                <div class="roam-content lang en" style="display: none;">
+                    <h1><span class="roam-highlight">Book Journey</span> Library Stories</h1>
+                </div>
+                <div class="roam-description lang zh">
                     <p>讓心靈來一場充滿書香的旅行！各圖書館推出多元活動，邀請你在書海中發現新知，豐富生活，<span>點擊活動了解更多詳情！</span></p>
                 </div>
+                <div class="roam-description lang en" style="display: none;">
+                    <p>Embark on a Literary Journey!Libraries offer diverse activities, inviting you to explore new knowledge and enrich your life.<span>Click to discover more details!</span></p>
+                </div>
                 <div class="roam-library-content">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title">
@@ -606,9 +915,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color1"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color1"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color1">
@@ -619,9 +939,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color2"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color1">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color2"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color2">
@@ -632,9 +963,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color3"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color2">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color3"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color3">
@@ -645,9 +987,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color4"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color3">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color4"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title">
@@ -658,9 +1011,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color1"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color1"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color1">
@@ -671,9 +1035,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color2"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color1">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color2"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color2">
@@ -684,9 +1059,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color3"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color2">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color3"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color3">
@@ -697,9 +1083,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color4"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color3">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color4"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title">
@@ -710,9 +1107,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color1"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color1"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color1">
@@ -723,9 +1131,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color2"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color1">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color2"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color2">
@@ -736,9 +1155,20 @@
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color3"></div>
                         </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color2">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color3"></div>
+                        </div>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <div class="roam-library-content1">
+                    <a href="" target="_blank" rel="noopener noreferrer" data-date="2025-02-13">
+                        <div class="roam-library-content1 lang zh">
                             <div class="roam-library-content-label">2/13(二)</div>
                             <div class="roam-library-content-bg">
                                 <div class="roam-library-content-title roam-title-color3">
@@ -746,6 +1176,17 @@
                                     <h3>新北市立圖書館總館</h3>
                                 </div>
                                 <div class="roam-library-content-number">線上報名 限40人</div>
+                            </div>
+                            <div class="roam-library-content-bg1 roam-bg-color4"></div>
+                        </div>
+                        <div class="roam-library-content1 lang en" style="display: none;">
+                            <div class="roam-library-content-label">Feb 13 (Tue)</div>
+                            <div class="roam-library-content-bg">
+                                <div class="roam-library-content-title roam-title-color3">
+                                    <h2>Library Guide & Reading</h2>
+                                    <h3>New Taipei Main Branch</h3>
+                                </div>
+                                <div class="roam-library-content-number">Register Online - 40 Spots</div>
                             </div>
                             <div class="roam-library-content-bg1 roam-bg-color4"></div>
                         </div>
@@ -766,7 +1207,7 @@
         </section>
         <footer class="roam-footer">
             <div class="roam-footer-section">
-                <h2 class="roam-footer-title">主辦單位</h2>
+                <h2 class="roam-footer-title">Organizer</h2>
                 <div class="roam-footer-hosts">
                     <img src="img/roam-logo1.svg" alt="新北市政府">
                     <img src="img/roam-logo2.svg" alt="新北市政府文化局">
@@ -774,7 +1215,7 @@
             </div>
             <hr class="roam-footer-divider">
             <div class="roam-footer-section">
-                <h2 class="roam-footer-title">合作單位</h2>
+                <h2 class="roam-footer-title">Partners</h2>
                 <div class="roam-footer-row">
                     <img src="img/roam-logo3.svg" alt="十三行博物館">
                     <img src="img/roam-logo4.svg" alt="淡水古蹟博物館">

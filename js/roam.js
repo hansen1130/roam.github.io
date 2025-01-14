@@ -191,3 +191,65 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.getElementById('roam-lang-zh').addEventListener('click', () => {
+    document.querySelectorAll('.lang.zh').forEach(el => el.style.display = '');
+    document.querySelectorAll('.lang.en').forEach(el => el.style.display = 'none');
+    document.getElementById('roam-lang-zh').classList.add('active');
+    document.getElementById('roam-lang-en').classList.remove('active');
+});
+
+document.getElementById('roam-lang-en').addEventListener('click', () => {
+    document.querySelectorAll('.lang.zh').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.en').forEach(el => el.style.display = '');
+    document.getElementById('roam-lang-en').classList.add('active');
+    document.getElementById('roam-lang-zh').classList.remove('active');
+});
+
+const langData = {
+    zh: {
+        title: "Point Out! 指向新北無限新北",
+        description: "探索新北文化之美，體驗多元新北故事，發現城市中的驚喜旅程。",
+        keywords: "新北旅遊, 新北文化, 景點推薦, 新北無限新北, 指向新北",
+        author: "新北市政府"
+    },
+    en: {
+        title: "Point Out! Explore Infinite New Taipei",
+        description: "Discover the beauty of New Taipei's culture, experience diverse stories, and uncover the city's hidden gems.",
+        keywords: "New Taipei travel, New Taipei culture, attractions, infinite New Taipei, Point Out",
+        author: "New Taipei Government"
+    }
+};
+
+document.getElementById('roam-lang-zh').addEventListener('click', () => {
+    switchLanguage('zh');
+});
+document.getElementById('roam-lang-en').addEventListener('click', () => {
+    switchLanguage('en');
+});
+
+function switchLanguage(lang) {
+    document.getElementById('page-title').innerText = langData[lang].title;
+    document.getElementById('meta-description').setAttribute('content', langData[lang].description);
+    document.getElementById('meta-keywords').setAttribute('content', langData[lang].keywords);
+    document.getElementById('meta-author').setAttribute('content', langData[lang].author);
+
+    if (lang === 'zh') {
+        document.getElementById('roam-lang-zh').classList.add('active');
+        document.getElementById('roam-lang-en').classList.remove('active');
+    } else {
+        document.getElementById('roam-lang-en').classList.add('active');
+        document.getElementById('roam-lang-zh').classList.remove('active');
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    document.querySelectorAll('.roam-library-content a').forEach(link => {
+        const activityDate = new Date(link.getAttribute('data-date'));
+        if (activityDate < today) {
+            link.style.display = 'none';
+        }
+    });
+});
