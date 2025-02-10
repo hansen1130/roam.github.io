@@ -1605,3 +1605,46 @@ a:hover .roam-bg-color4 {
         height: 80%;
     }
 }
+.roam-popup-event {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.roam-popup-event-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+
+}
+
+.roam-popup-event-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #2EA7E0;
+}
+.roam-popup-event-content h2{
+        line-height: 3rem;
+    letter-spacing: .1rem;
+}
+.roam-popup-event-highlight {
+    color: #2EA7E0;
+    font-weight: bold;
+}

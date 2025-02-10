@@ -253,3 +253,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("roam-popup-event").style.display = "block";
+    }, 100); 
+});
+
+function closeRoamPopupEvent() {
+    document.getElementById("roam-popup-event").style.display = "none";
+}
+
+document.getElementById("roam-popup-event").addEventListener("click", function (event) {
+    if (event.target === this) {
+        closeRoamPopupEvent();
+    }
+});
+
