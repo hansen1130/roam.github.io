@@ -12,6 +12,7 @@ body {
     vertical-align: baseline;
     box-sizing: border-box;
     background-color: #F3FAFF;
+
 }
 
 .roam h1,
@@ -1605,6 +1606,7 @@ a:hover .roam-bg-color4 {
         height: 80%;
     }
 }
+
 .roam-popup-event {
     display: none;
     position: fixed;
@@ -1627,7 +1629,6 @@ a:hover .roam-bg-color4 {
     text-align: center;
     width: 80%;
     max-width: 400px;
-
 }
 
 .roam-popup-event-close {
@@ -1640,11 +1641,24 @@ a:hover .roam-bg-color4 {
     cursor: pointer;
     color: #2EA7E0;
 }
-.roam-popup-event-content h2{
-        line-height: 3rem;
+
+.roam-popup-event-content h2 {
+    line-height: 3rem;
     letter-spacing: .1rem;
 }
+
 .roam-popup-event-highlight {
     color: #2EA7E0;
     font-weight: bold;
+}
+.roam-description p a{
+    font-size: 2rem;
+    color: #FF7400;
+    line-height: 4rem;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.roam-description p a:hover{
+    color: #2EA7E0;
 }
