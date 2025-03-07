@@ -12,7 +12,6 @@ body {
     vertical-align: baseline;
     box-sizing: border-box;
     background-color: #F3FAFF;
-
 }
 
 .roam h1,
@@ -1079,7 +1078,7 @@ a:hover .roam-bg-color4 {
 
     .roam-page3-travel-title {
         font-size: 1.2rem;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
     }
 
     .roam-popup1-content {
@@ -1651,7 +1650,8 @@ a:hover .roam-bg-color4 {
     color: #2EA7E0;
     font-weight: bold;
 }
-.roam-description p a{
+
+.roam-description p a {
     font-size: 2rem;
     color: #FF7400;
     line-height: 4rem;
@@ -1659,6 +1659,7 @@ a:hover .roam-bg-color4 {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
-.roam-description p a:hover{
+
+.roam-description p a:hover {
     color: #2EA7E0;
 }
