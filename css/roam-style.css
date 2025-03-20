@@ -890,15 +890,15 @@ body {
     display: grid;
     width: 100%;
     max-width: 1920px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     justify-items: center;
 }
 
 .roam-library-content1 {
     position: relative;
-    width: 260px;
-    height: 180px;
+    width: 320px;
+    height: 240px;
 }
 
 .roam-library-content-label {
@@ -928,7 +928,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.roam-library-content-title{
+	padding:0 16px;
+}
 .roam-library-content-title h2 {
     font-size: 24px;
     color: #2EA7E0;
@@ -1406,7 +1408,7 @@ a:hover .roam-bg-color4 {
     .roam-library-content1 {
         position: relative;
         width: 240px;
-        height: 160px;
+        height: 180px;
     }
 
     .roam-library-content-title h2 {
